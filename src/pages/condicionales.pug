@@ -1,0 +1,38 @@
+//condicionales
+//las variables de un archivo pug se pueden usar en otro con include
+//- - var cto = "alexis"
+//- if 5 > 3
+//-     p hola mundo
+//- else   
+//-     p no se cumplio
+//- if cto === 'alexis'
+//-     p edteam tiene cto
+//- else
+//-     p edteam no tiene cto
+//ciclo (iteraciones)
+//forma javascript
+//- for(var i=0;i < 3 ; i++)
+//forma pug
+//- - var days = ['lunes', 'martes','miercoles']
+//- - pages = []
+//- each day, i in days
+//-     p= day.toUpperCase() + " es el dia " + i
+//-     p= `${day.toUpperCase()} es el dia ${i + 1}`
+//- ul
+//-     each page of pages
+//-         li: a(href=`${page.split(' ').join('-')}.html`)=page
+    //- el else no sirvio
+    //- else
+    //-     p no hay elementos para recorrer
+//recorrer objetos
+- 
+    const edTeam = {
+        ceo: 'alvaro',
+        cto: 'alexis',
+        coo: 'beto'
+    }
+ul
+    each val, key in edTeam
+        li= val
+        li= key
+        li= `${val} es el ${key.toUpperCase()} de EDteam`

@@ -1,0 +1,42 @@
+
+<!--son estructuras de elementos -->
+<!--parecidos a los templates pero mas pequenas-->
+<!--es utilizan para estructuras de elementos que son repetitivos-->
+<!--para anadir un mixin utilizamos-->
+<!--+boton--><!DOCTYPE html>
+<html>
+  <head>
+    <title>hola estoy sobreescribiendo variablede config.pug - EDteam</title>
+    <meta name="name" content="este sitio es muy chevere">
+    <link rel="stylesheet" href="css/otrarutaconprepend.css" attr>
+    <!--anadimos append o prepend para que un bloque no sobreescriba otros elementos-->
+    <!--prepend anade antes -->
+    <link rel="stylesheet" href="css/styles.css" attr>
+    <link rel="stylesheet" href="css/otraruta.css" attr>
+    <!--anadimos append o prepend para que un bloque no sobreescriba otros elementos-->
+    <!--append anade despues-->
+  </head>
+  <body class="home-page">
+    <h1>bienvenido</h1>
+    <h1>mi primera pagina web</h1>
+    <!--es un mixins--><a href="https://ed.team">ir a edteam</a>
+    <!--el include sirve para meter contenido a la estructura html no para crearla para eso existen los blocks-->
+    <!--include ../includes/templates-->
+    <article class="card">
+      <div class="card__image"><img src="comunidad.jpg" alt="alt"/></div>
+      <h2 class="card-title">bienvenidos</h2>
+      <p class="card__body">no somos aun la comunidad mas grande+</p>
+      <p>como estan</p>
+    </article>
+    <article class="card">
+      <div class="card__image"><img src="edteam.jpg" alt="alt"/></div>
+      <h2 class="card-title">tecnologo en electronica</h2>
+      <p class="card__body">interesado en la tecnologia</p>
+      <p>como estan</p>
+    </article>
+    <footer>
+      <p>EDteam</p>
+    </footer>
+    <script>console.log('hola mundo')</script>
+  </body>
+</html>

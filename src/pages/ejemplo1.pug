@@ -1,0 +1,22 @@
+// codigo javascript en pug epa
+// code unbuffered (no sale a HTML)
+// el guion es igual a javascript
+- let currentPage = 'home'
+- let name = 'sebastian timote'
+//para escribir codigo javascript de varias lineas
+-
+    let edTeam = {
+        ceo: 'alvaro felipe',
+        cto: 'alexis',
+        coo: 'beto'
+    }
+
+
+body(class= currentPage).main-page
+    //code buffered (si sale a HTML)
+    //concatenacion
+    p= name + ", estudiante en edteam dark"
+    //concatenacion templates string con backticks
+    p= `${name}, estudiante en edteam dark`
+
+    p= `el profe es ${edTeam.ceo}`

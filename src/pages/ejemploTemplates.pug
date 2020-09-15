@@ -1,0 +1,28 @@
+extends ../includes/templates
+append config
+    - pageTitle = 'hola estoy sobreescribiendo variablede config.pug'
+    - currentPage = 'home page'
+block content
+    h1 mi primera pagina web
+    //es un mixins
+    +boton('https://ed.team', 'ir a edteam')
+    //el include sirve para meter contenido a la estructura html no para crearla para eso existen los blocks
+    //include ../includes/templates
+    +card('comunidad.jpg', 'bienvenidos', 'no somos aun la comunidad mas grande+')
+    +card('edteam.jpg', 'tecnologo en electronica', 'interesado en la tecnologia')
+        
+
+//- block title
+//-     | home
+append styles
+    link(rel="stylesheet", href="css/otraruta.css", attr)
+    //anadimos append o prepend para que un bloque no sobreescriba otros elementos
+    //append anade despues
+prepend styles
+    link(rel="stylesheet", href="css/otrarutaconprepend.css", attr)
+    //anadimos append o prepend para que un bloque no sobreescriba otros elementos
+    //prepend anade antes 
+block footer
+    p EDteam
+block contentCard
+    p como estan

@@ -1,0 +1,49 @@
+//menu multinivel
+- 
+    let pages = [
+        {
+            title: "Home",
+            url: "index.html",
+            child: []
+        },
+        {
+            title: "Services",
+            url: "services.html",
+            child: [
+                {
+                    title: "Web design",
+                    url: "web-design.html"
+                },
+                {
+                    title: "SEO",
+                    url: "seo.html"
+                }
+            ]
+        },
+        {
+            title: "Contact us",
+            url: "contact.html",
+            child: []
+        }
+    ]
+doctype
+head
+    title menu-multinivel
+    meta(name="name" content="content" charset="utf8")
+    style. 
+        h1{
+            color: red;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+body
+    h1 ejercicio 2
+    ul.menu 
+        each page in pages
+            li #[a(href=page.url)= page.title]
+                    if page.child.length > 0
+                        ul
+                            each subpage in page.child
+                                li #[a(href=subpage.url)=subpage.title]

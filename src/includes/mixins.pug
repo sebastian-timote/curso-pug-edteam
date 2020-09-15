@@ -1,0 +1,14 @@
+//son estructuras de elementos 
+//parecidos a los templates pero mas pequenas
+//es utilizan para estructuras de elementos que son repetitivos
+mixin boton(url,texto)
+    a(href=url)= texto
+//para anadir un mixin utilizamos
+//+boton
+mixin card(image,title,description)
+    article.card
+        .card__image
+            img(src= image, alt="alt")
+        h2.card-title= title
+        p.card__body= description
+        block contentCard
